@@ -1,0 +1,4 @@
+(function(){
+  const cards=APP_DATA.nafes.map((x,i)=>`<article class="nafes-card reveal"><span>0${i+1}</span><h3>${x.title}</h3><p>${x.text}</p></article>`).join('');
+  document.getElementById('nafes-section').innerHTML=`<section id="nafes" class="section nafes-section"><div class="container"><div class="section-heading light reveal"><span class="eyebrow">نافس</span><h2>من النتيجة إلى خطة تحسين واضحة</h2><p>خدمات مترابطة تساعد على قراءة النتائج، تحديد الأولويات، وبناء خطوات التحسين.</p></div><div class="nafes-grid">${cards}</div><div id="process" class="process reveal"><div><b>1</b><span>استلام البيانات</span></div><i></i><div><b>2</b><span>تحليل النتائج</span></div><i></i><div><b>3</b><span>تحديد الفجوات</span></div><i></i><div><b>4</b><span>إعداد الخطة</span></div></div></div></section>`;
+})();
